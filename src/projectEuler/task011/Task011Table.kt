@@ -172,7 +172,7 @@ private fun getDiagonalColumnsListFromString(str: String, findColumn: Int, rows:
     return list
 }
 
-fun findMaxMultipleInList(list: List<Int>, count: Int): Int {
+private fun findMaxMultipleInList(list: List<Int>, count: Int): Int {
     if (list.size < count) return 0
 
     var max = 0

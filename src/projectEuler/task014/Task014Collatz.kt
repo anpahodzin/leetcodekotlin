@@ -42,7 +42,7 @@ fun main() {
     bench.printBenchmark()
 }
 
-fun getCollatzNumbers(count: Int): Int {
+private fun getCollatzNumbers(count: Int): Int {
     var value = 1
     var n = count
     while (n > 1) {
@@ -56,7 +56,7 @@ fun getCollatzNumbers(count: Int): Int {
     return value
 }
 
-fun generateCollatzNumbers(count: Int): List<Int> {
+private fun generateCollatzNumbers(count: Int): List<Int> {
     var list = mutableListOf<Int>()
     var n = count
     while (n > 1) {

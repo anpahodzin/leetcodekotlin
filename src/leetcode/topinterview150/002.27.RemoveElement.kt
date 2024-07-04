@@ -13,7 +13,7 @@ class TestRemove {
     }
 }
 
-fun removeElement(nums: IntArray, `val`: Int): Int {
+private fun removeElement(nums: IntArray, `val`: Int): Int {
     var index = 0
     val newNums = IntArray(nums.size)
     for (i in nums.indices) {

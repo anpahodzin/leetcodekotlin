@@ -13,7 +13,7 @@ class TestRemoveDuplicate2 {
     @Test
     fun case1() {
         val nums = intArrayOf(1, 1, 1, 2, 2, 3)
-        val k = removeDuplicates(nums)
+        val k = removeDuplicates2(nums)
         val expect = intArrayOf(1, 1, 2, 2, 3)
         assertContentEquals(expect, nums.copyOf(k))
     }
@@ -21,13 +21,13 @@ class TestRemoveDuplicate2 {
     @Test
     fun case2() {
         val nums = intArrayOf(0, 0, 1, 1, 1, 1, 2, 3, 3)
-        val k = removeDuplicates(nums)
+        val k = removeDuplicates2(nums)
         val expect = intArrayOf(0, 0, 1, 1, 2, 3, 3)
         assertContentEquals(expect, nums.copyOf(k))
     }
 }
 
-fun removeDuplicates2(nums: IntArray): Int {
+private fun removeDuplicates2(nums: IntArray): Int {
     var duplicateCount = 0
     var duplicateIndex = 1
     var prevUniqueValue = nums.first()

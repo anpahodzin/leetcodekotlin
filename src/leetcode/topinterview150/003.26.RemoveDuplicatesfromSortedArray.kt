@@ -35,7 +35,7 @@ class TestRemoveDuplicate {
     }
 }
 
-fun removeDuplicates(nums: IntArray): Int {
+private fun removeDuplicates(nums: IntArray): Int {
     var duplicateIndex = 1
     var prevUniqueValue = nums.first()
     for (i in 0 until nums.size) {

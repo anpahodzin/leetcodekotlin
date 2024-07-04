@@ -65,7 +65,7 @@ class TestMerge {
     }
 }
 
-fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
+private fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
     if (n == 0) return
     var a = m - 1
     var b = n - 1

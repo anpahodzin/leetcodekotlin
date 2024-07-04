@@ -15,7 +15,7 @@ fun main() {
     println("nok = $c")
 }
 
-fun isDivideWithoutRemainder(num: Long, start: Int, end: Int): Boolean {
+private fun isDivideWithoutRemainder(num: Long, start: Int, end: Int): Boolean {
     val isDiv = num % end == 0L
     return if (!isDiv || start == end) {
         isDiv

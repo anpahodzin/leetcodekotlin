@@ -30,7 +30,7 @@ fun main() {
 }
 
 
-inline fun <reified T : Number> createGrid(rows: Int, cols: Int, default: T): Array<Array<T>> {
+private inline fun <reified T : Number> createGrid(rows: Int, cols: Int, default: T): Array<Array<T>> {
     return Array(rows) {
         Array(cols) {
             default
