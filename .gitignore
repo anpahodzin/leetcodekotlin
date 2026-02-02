@@ -8,5 +8,6 @@ bin/
 build/
 .gradle
 .gradletasknamecache
+.idea
 gradle-app.setting
 !gradle-wrapper.jar
